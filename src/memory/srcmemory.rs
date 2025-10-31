@@ -3,12 +3,12 @@
 #![allow(unused_variables)]
 
 // --- Karnal64 Sistem Çağrı Numaraları ---
-pub const SYSCALL_MEMORY_ALLOC: u64 = 10;
-pub const SYSCALL_MEMORY_FREE: u64 = 11;
-pub const SYSCALL_MEMORY_PROTECT: u64 = 12;
+pub const SYSCALL_MEM_ALLOC: u64 = 10;
+pub const SYSCALL_MEM_FREE: u64 = 11;
+pub const SYSCALL_MEM_PROTECT: u64 = 12;
 pub const SYSCALL_MEMORY_MAP: u64 = 13;
-pub const SYSCALL_MEMORY_UNMAP: u64 = 14;
-pub const SYSCALL_MEMORY_INFO: u64 = 15;
+pub const SYSCALL_MEM_UNMAP: u64 = 14;
+pub const SYSCALL_MEM_INFO: u64 = 15;
 
 // --- Hata Türü ---
 #[derive(Debug, Copy, Clone, PartialEq, Eq)]
@@ -305,3 +305,4 @@ pub fn example_usage() {
         let _ = KarnalMemory::free(ptr, 4096);
     }
 }
+
